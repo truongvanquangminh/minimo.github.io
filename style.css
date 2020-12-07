@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.header{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 100%;
+}
+
+.header .logo{
+    max-width: 20%;
+    float: left;
+}
+
+.header .menu{
+    max-width: 80%;
+    float: right;
+}
+
+.header .menu a{
+    float: right;
+    padding: 20px 0 20px 100px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #626262;
+}
+
+.header .menu a:hover{
+    color: blue;
+}
+
+.header .banner img {
+    max-width: 100%;
+}
+
+.section{
+    width: 990px;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 100%;
+}
+
+h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 0.9em;
+    color: #626262;
+}
+
+.section .section__photodiary h1{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+.section .section__leaveacomment .section--leaveacomment{
+    display: flex;
+    max-width: 100%;
+    padding: 0 30px;
+}
+
+.section .section__leaveacomment .section--leaveacomment .section__sectionlifestyle{
+    max-width: 50%;
+    padding: 30px;
+    margin-left: -50px;
+    margin-right: 60px;
+}
+
+.section__sectionlifestyle h1{
+    font-size: 1.5em;
+}
+
+.signup{
+    background: #f0f0f0;
+    text-align: center;
+    max-width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.signup .email{
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.signup .email input{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: #f0f0f0;
+    outline: none;
+    padding-right: 100px;
+}
+
+.signup .email img{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.section .section--lifestyle{
+    margin-top: 100px;
+    display: flex;
+    width: 990px;
+    padding: 0 30px;
+}
+
+.section .section--lifestyle .section__sectionlifestyle{
+    max-width: 50%;
+    padding: 30px;
+    margin-left: -50px;
+    margin-right: 60px;
+}
+
+.loadmore{
+    border-color: #666666;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px 40px;
+    margin: 170px auto;
+    display: block;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+/*Css footer*/
+
+.footer {
+    height: 100px;
+    max-width: 100%;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.footer ul li:first-child {
+    padding-left: 80px;
+}
+
+
+.footer ul li a{
+    text-decoration: none;
+    color: #626262;
+}
+
+.footer .icon {
+    padding-right: 70px;
+}
+
+.footer .icon_social {
+    padding: 0 10px;
+}
+
+/*Css footer*/
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        90%
+    }
+
+    .header .menu {
+        flex-wrap: wrap;
+        position: absolute;
+        margin-left: 100px;
+    }
+
+    .header .menu a {
+        margin-right: -60px;
+    }
+
+    .section .section__leaveacomment .section--leaveacomment{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .section .section--lifestyle {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
